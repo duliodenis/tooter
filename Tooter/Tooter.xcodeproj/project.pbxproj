@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CA857531C6D0E5A00440898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857521C6D0E5A00440898 /* main.m */; };
+		6CA857561C6D0E5A00440898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857551C6D0E5A00440898 /* AppDelegate.m */; };
+		6CA857591C6D0E5A00440898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857581C6D0E5A00440898 /* ViewController.m */; };
+		6CA8575C1C6D0E5A00440898 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8575A1C6D0E5A00440898 /* Main.storyboard */; };
+		6CA8575E1C6D0E5A00440898 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8575D1C6D0E5A00440898 /* Assets.xcassets */; };
+		6CA857611C6D0E5A00440898 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CA8575F1C6D0E5A00440898 /* LaunchScreen.storyboard */; };
+		6CA8576B1C6D111F00440898 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA8576A1C6D111F00440898 /* HTTPService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6CA8574E1C6D0E5A00440898 /* Tooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CA857521C6D0E5A00440898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6CA857541C6D0E5A00440898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6CA857551C6D0E5A00440898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6CA857571C6D0E5A00440898 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6CA857581C6D0E5A00440898 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6CA8575B1C6D0E5A00440898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CA8575D1C6D0E5A00440898 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CA857601C6D0E5A00440898 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CA857621C6D0E5A00440898 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CA857691C6D111F00440898 /* HTTPService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HTTPService.h; path = Services/HTTPService.h; sourceTree = "<group>"; };
+		6CA8576A1C6D111F00440898 /* HTTPService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HTTPService.m; path = Services/HTTPService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CA8574B1C6D0E5A00440898 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CA857451C6D0E5A00440898 = {
+			isa = PBXGroup;
+			children = (
+				6CA857501C6D0E5A00440898 /* Tooter */,
+				6CA8574F1C6D0E5A00440898 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CA8574F1C6D0E5A00440898 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CA8574E1C6D0E5A00440898 /* Tooter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CA857501C6D0E5A00440898 /* Tooter */ = {
+			isa = PBXGroup;
+			children = (
+				6CA857681C6D10F800440898 /* Services */,
+				6CA857541C6D0E5A00440898 /* AppDelegate.h */,
+				6CA857551C6D0E5A00440898 /* AppDelegate.m */,
+				6CA857571C6D0E5A00440898 /* ViewController.h */,
+				6CA857581C6D0E5A00440898 /* ViewController.m */,
+				6CA8575A1C6D0E5A00440898 /* Main.storyboard */,
+				6CA8575D1C6D0E5A00440898 /* Assets.xcassets */,
+				6CA8575F1C6D0E5A00440898 /* LaunchScreen.storyboard */,
+				6CA857621C6D0E5A00440898 /* Info.plist */,
+				6CA857511C6D0E5A00440898 /* Supporting Files */,
+			);
+			path = Tooter;
+			sourceTree = "<group>";
+		};
+		6CA857511C6D0E5A00440898 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6CA857521C6D0E5A00440898 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CA857681C6D10F800440898 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6CA857691C6D111F00440898 /* HTTPService.h */,
+				6CA8576A1C6D111F00440898 /* HTTPService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CA8574D1C6D0E5A00440898 /* Tooter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CA857651C6D0E5A00440898 /* Build configuration list for PBXNativeTarget "Tooter" */;
+			buildPhases = (
+				6CA8574A1C6D0E5A00440898 /* Sources */,
+				6CA8574B1C6D0E5A00440898 /* Frameworks */,
+				6CA8574C1C6D0E5A00440898 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tooter;
+			productName = Tooter;
+			productReference = 6CA8574E1C6D0E5A00440898 /* Tooter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CA857461C6D0E5A00440898 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Dulio Denis";
+				TargetAttributes = {
+					6CA8574D1C6D0E5A00440898 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 6CA857491C6D0E5A00440898 /* Build configuration list for PBXProject "Tooter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CA857451C6D0E5A00440898;
+			productRefGroup = 6CA8574F1C6D0E5A00440898 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CA8574D1C6D0E5A00440898 /* Tooter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CA8574C1C6D0E5A00440898 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA857611C6D0E5A00440898 /* LaunchScreen.storyboard in Resources */,
+				6CA8575E1C6D0E5A00440898 /* Assets.xcassets in Resources */,
+				6CA8575C1C6D0E5A00440898 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CA8574A1C6D0E5A00440898 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CA857591C6D0E5A00440898 /* ViewController.m in Sources */,
+				6CA8576B1C6D111F00440898 /* HTTPService.m in Sources */,
+				6CA857561C6D0E5A00440898 /* AppDelegate.m in Sources */,
+				6CA857531C6D0E5A00440898 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6CA8575A1C6D0E5A00440898 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA8575B1C6D0E5A00440898 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CA8575F1C6D0E5A00440898 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CA857601C6D0E5A00440898 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CA857631C6D0E5A00440898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CA857641C6D0E5A00440898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CA857661C6D0E5A00440898 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddApps.Tooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6CA857671C6D0E5A00440898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Tooter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.ddApps.Tooter;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CA857491C6D0E5A00440898 /* Build configuration list for PBXProject "Tooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA857631C6D0E5A00440898 /* Debug */,
+				6CA857641C6D0E5A00440898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CA857651C6D0E5A00440898 /* Build configuration list for PBXNativeTarget "Tooter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CA857661C6D0E5A00440898 /* Debug */,
+				6CA857671C6D0E5A00440898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CA857461C6D0E5A00440898 /* Project object */;
+}
