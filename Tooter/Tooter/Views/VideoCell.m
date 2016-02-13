@@ -7,6 +7,7 @@
 //
 
 #import "VideoCell.h"
+#import "Video.h"
 
 @interface VideoCell()
 @property (weak, nonatomic) IBOutlet UIImageView *thumbnail;
@@ -27,10 +28,10 @@
     self.layer.shadowOffset = CGSizeMake(0.0, 2.0);
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)updateUI:(nonnull Video *)video {
+    self.titleLabel.text = video.title;
+    self.descriptionLabel.text = video.videoDescription;
+    self.thumbnail.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:video.thumbnailURL]]];
 }
 
 @end

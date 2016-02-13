@@ -70,20 +70,26 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     VideoCell *cell = (VideoCell *)[tableView dequeueReusableCellWithIdentifier:@"VideoCell"];
     
-    if (!cell) {
-        cell = [[VideoCell alloc] init];
-        
-    }
+    if (!cell) cell = [[VideoCell alloc] init];
     
     return cell;
 }
+
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
 
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.videoList.count;
+}
+
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    Video *video = [self.videoList objectAtIndex:indexPath.row];
+    VideoCell *videoCell = (VideoCell *)cell;
+    [videoCell updateUI:video];
 }
 
 @end
