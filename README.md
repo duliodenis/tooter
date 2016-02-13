@@ -1,5 +1,5 @@
 # Tooter
-An iOS 9 OG App, AKA Objective-C based, that displays a list of Video Tutorials from a Node.js server backend.
+An iOS 9 OG App, AKA Objective-C based, that displays a list of Video Tutorials from a [Node.js server backend](https://github.com/duliodenis/tooter/tree/master/server).
 
 ### Licensing
 Tooter is licensed under [the MIT License](https://github.com/duliodenis/tooter/blob/master/LICENSE).

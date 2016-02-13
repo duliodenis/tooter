@@ -8,8 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+// Callback Block
+typedef void (^onComplete)(NSDictionary * __nullable dataDictionary, NSString * __nullable errorMessage);
+
 @interface HTTPService : NSObject
 
-+ (id) sharedInstance;
++ (nullable id) sharedInstance;
+- (void) getTutorials:(nullable onComplete)completionHandler;
 
 @end

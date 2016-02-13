@@ -15,5 +15,16 @@
 
 @implementation ViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [[HTTPService sharedInstance] getTutorials:^(NSDictionary * _Nullable dataDictionary, NSString * _Nullable errorMessage) {
+        if (dataDictionary) {
+            NSLog(@"Dictionary: %@", dataDictionary.debugDescription);
+        } else if (errorMessage) {
+            // display alert
+        }
+    }];
+}
 
 @end
