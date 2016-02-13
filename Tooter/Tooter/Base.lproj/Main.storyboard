@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,101 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xdb-bX-oG5">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.59607843137254901" blue="0.85882352941176465" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="60S-0g-Zgm"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="97" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V8l-oz-uUw">
+                                <rect key="frame" x="20" y="38" width="560" height="562"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="97" id="lFX-i0-TXe" customClass="VideoCell">
+                                        <rect key="frame" x="0.0" y="28" width="560" height="97"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lFX-i0-TXe" id="TDj-bu-mTI">
+                                            <rect key="frame" x="0.0" y="0.0" width="560" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vX3-35-BBB">
+                                                    <rect key="frame" x="8" y="8" width="544" height="81"/>
+                                                    <subviews>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PUm-4m-Hnz">
+                                                            <rect key="frame" x="8" y="8" width="114" height="65"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="114" id="t72-ne-n8E"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKonf 2015 - Chris Eidhof: Functional View Controllers" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NzG-Me-dN4">
+                                                            <rect key="frame" x="130" y="8" width="406" height="21"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="nrF-L8-J7u"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bj9-LX-kvz">
+                                                            <rect key="frame" x="130" y="37" width="406" height="36"/>
+                                                            <string key="text">Chris Eidhof is a Dutch software developer living in Berlin. He spends most of his time building iOS and Mac apps, such as Deckset. He started UIKonf in 2013, http://objc.io, and wrote a book about Functional Programming in Swift.</string>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Bj9-LX-kvz" firstAttribute="top" secondItem="NzG-Me-dN4" secondAttribute="bottom" constant="8" id="4pA-x8-HmO"/>
+                                                        <constraint firstItem="PUm-4m-Hnz" firstAttribute="top" secondItem="vX3-35-BBB" secondAttribute="topMargin" id="BrM-bY-UxS"/>
+                                                        <constraint firstItem="PUm-4m-Hnz" firstAttribute="bottom" secondItem="vX3-35-BBB" secondAttribute="bottomMargin" id="dg4-aX-HXc"/>
+                                                        <constraint firstItem="NzG-Me-dN4" firstAttribute="top" secondItem="vX3-35-BBB" secondAttribute="top" constant="8" id="gsw-O4-L6c"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Bj9-LX-kvz" secondAttribute="bottom" constant="8" id="jlw-pM-n6J"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Bj9-LX-kvz" secondAttribute="trailing" constant="8" id="kTT-3u-uoH"/>
+                                                        <constraint firstItem="NzG-Me-dN4" firstAttribute="leading" secondItem="PUm-4m-Hnz" secondAttribute="trailing" constant="8" id="qco-GD-VdD"/>
+                                                        <constraint firstItem="Bj9-LX-kvz" firstAttribute="leading" secondItem="PUm-4m-Hnz" secondAttribute="trailing" constant="8" id="qzs-KO-rjZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="NzG-Me-dN4" secondAttribute="trailing" constant="8" id="sHB-FE-WyU"/>
+                                                        <constraint firstItem="PUm-4m-Hnz" firstAttribute="leading" secondItem="vX3-35-BBB" secondAttribute="leadingMargin" id="up1-20-epp"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="vX3-35-BBB" firstAttribute="bottom" secondItem="TDj-bu-mTI" secondAttribute="bottomMargin" id="5aC-rO-skc"/>
+                                                <constraint firstItem="vX3-35-BBB" firstAttribute="leading" secondItem="TDj-bu-mTI" secondAttribute="leadingMargin" id="FTy-qC-fUd"/>
+                                                <constraint firstItem="vX3-35-BBB" firstAttribute="top" secondItem="TDj-bu-mTI" secondAttribute="topMargin" id="Sab-4P-kix"/>
+                                                <constraint firstItem="vX3-35-BBB" firstAttribute="trailing" secondItem="TDj-bu-mTI" secondAttribute="trailingMargin" id="Voz-YI-1XL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="cellView" destination="vX3-35-BBB" id="PZb-WK-yqv"/>
+                                            <outlet property="descriptionLabel" destination="Bj9-LX-kvz" id="61k-yB-ujz"/>
+                                            <outlet property="thumbnail" destination="PUm-4m-Hnz" id="Xws-o7-pA6"/>
+                                            <outlet property="titleLabel" destination="NzG-Me-dN4" id="w9i-2V-Gv2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xdb-bX-oG5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7NR-kz-IXm"/>
+                            <constraint firstItem="V8l-oz-uUw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="GOC-wB-xey"/>
+                            <constraint firstItem="V8l-oz-uUw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Hgi-cQ-O8O"/>
+                            <constraint firstAttribute="trailing" secondItem="xdb-bX-oG5" secondAttribute="trailing" id="Lsy-I9-lda"/>
+                            <constraint firstItem="xdb-bX-oG5" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aCC-H4-iBD"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="V8l-oz-uUw" secondAttribute="bottom" id="bPm-Ly-6Dg"/>
+                            <constraint firstItem="V8l-oz-uUw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="uEG-DC-YsP"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="510" y="461"/>
         </scene>
     </scenes>
 </document>
