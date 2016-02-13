@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 // Callback Block
-typedef void (^onComplete)(NSDictionary * __nullable dataDictionary, NSString * __nullable errorMessage);
+typedef void (^onComplete)(NSArray * __nullable dataArray, NSString * __nullable errorMessage);
 
 @interface HTTPService : NSObject
 

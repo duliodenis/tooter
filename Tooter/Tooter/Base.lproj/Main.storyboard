@@ -108,6 +108,9 @@
                             <constraint firstItem="V8l-oz-uUw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="18" id="uEG-DC-YsP"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="V8l-oz-uUw" id="lvn-lH-MbU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

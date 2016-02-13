@@ -33,7 +33,7 @@
         
         if (data != nil) {
             NSError *error;
-            NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+            NSArray *json = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
             
             if (error == nil) {
                 completionHandler(json, nil);

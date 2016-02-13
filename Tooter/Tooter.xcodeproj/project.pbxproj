@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C4479451C6FB20200D73174 /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4479441C6FB20200D73174 /* VideoCell.m */; };
+		6C4479491C6FC1D200D73174 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C4479481C6FC1D200D73174 /* Video.m */; };
 		6CA857531C6D0E5A00440898 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857521C6D0E5A00440898 /* main.m */; };
 		6CA857561C6D0E5A00440898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857551C6D0E5A00440898 /* AppDelegate.m */; };
 		6CA857591C6D0E5A00440898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CA857581C6D0E5A00440898 /* ViewController.m */; };
@@ -20,6 +21,8 @@
 /* Begin PBXFileReference section */
 		6C4479431C6FB20200D73174 /* VideoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoCell.h; path = Views/VideoCell.h; sourceTree = "<group>"; };
 		6C4479441C6FB20200D73174 /* VideoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VideoCell.m; path = Views/VideoCell.m; sourceTree = "<group>"; };
+		6C4479471C6FC1D200D73174 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Video.h; path = Model/Video.h; sourceTree = "<group>"; };
+		6C4479481C6FC1D200D73174 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Video.m; path = Model/Video.m; sourceTree = "<group>"; };
 		6CA8574E1C6D0E5A00440898 /* Tooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CA857521C6D0E5A00440898 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6CA857541C6D0E5A00440898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +57,15 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		6C4479461C6FC19C00D73174 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6C4479471C6FC1D200D73174 /* Video.h */,
+				6C4479481C6FC1D200D73174 /* Video.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6CA857451C6D0E5A00440898 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +85,7 @@
 		6CA857501C6D0E5A00440898 /* Tooter */ = {
 			isa = PBXGroup;
 			children = (
+				6C4479461C6FC19C00D73174 /* Model */,
 				6C4479421C6FB1C600D73174 /* Views */,
 				6CA857681C6D10F800440898 /* Services */,
 				6CA857541C6D0E5A00440898 /* AppDelegate.h */,
@@ -178,6 +191,7 @@
 				6CA857591C6D0E5A00440898 /* ViewController.m in Sources */,
 				6C4479451C6FB20200D73174 /* VideoCell.m in Sources */,
 				6CA8576B1C6D111F00440898 /* HTTPService.m in Sources */,
+				6C4479491C6FC1D200D73174 /* Video.m in Sources */,
 				6CA857561C6D0E5A00440898 /* AppDelegate.m in Sources */,
 				6CA857531C6D0E5A00440898 /* main.m in Sources */,
 			);
