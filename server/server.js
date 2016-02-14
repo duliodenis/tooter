@@ -27,21 +27,21 @@ var tutorials = [
     id: 1,
     title: "UIKonf 2015 - Chris Eidhof: Functional View Controllers",
     description: "Chris Eidhof is a Dutch software developer living in Berlin. He spends most of his time building iOS and Mac apps, such as Deckset. He started UIKonf in 2013, http://objc.io, and wrote a book about Functional Programming in Swift.",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/uQFI9rDrl8s" frameborder="0" allowfullscreen></iframe>',
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/uQFI9rDrl8s" frameborder="0" allowfullscreen></iframe></div>',
     thumbnail: "https://realm.io/assets/news/summit-chris-cover.png"
   },
   {
     id: 2,
     title: "dotSwift 2015 - Kyle Fuller - Practical Functional Programming in Swift",
     description: "A practical introduction to functional programming in Swift and how it can be applied to the real world. Going over what being functional means and how it allows you to write clearer, declarative and testable code.",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/L4zlqhMuNKw" frameborder="0" allowfullscreen></iframe>',
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/L4zlqhMuNKw" frameborder="0" allowfullscreen></iframe></div>',
     thumbnail: "https://farm9.staticflickr.com/8678/16486853175_1d0f2b243a_k_d.jpg"
   },
   {
     id: 3,
     title: "Functional and Reactive Programming with Swift",
     description: "World-class software developer Ash Furrow talks about working with ReactiveCocoa and Swift.",
-    iframe: '<iframe width="560" height="315" src="https://www.youtube.com/embed/tRCgBuJsNtg" frameborder="0" allowfullscreen></iframe>',
+    iframe: '<div class="container"><iframe class="video" src="https://www.youtube.com/embed/tRCgBuJsNtg" frameborder="0" allowfullscreen></iframe></div>',
     thumbnail: "https://ashfurrow.com/img/blog/reactivecocoa-with-swift/1.jpg"
   }
 ];

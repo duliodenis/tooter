@@ -110,11 +110,91 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="V8l-oz-uUw" id="lvn-lH-MbU"/>
+                        <segue destination="7H0-Xg-wgr" kind="presentation" identifier="VideoVC" id="rpf-Pg-sue"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="510" y="461"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="Gx2-5w-7Cf">
+            <objects>
+                <viewController id="7H0-Xg-wgr" customClass="VideoVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyz-ug-jI6"/>
+                        <viewControllerLayoutGuide type="bottom" id="tlP-SL-Pib"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ONJ-c2-4wf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fas-TE-owy">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="275"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="275" id="Y9U-Vn-yYO"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIKonf 2015 - Chris Eidhof: Functional View Controllers Chris Eidhof: Functional View Controllers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA5-Oi-mZZ">
+                                <rect key="frame" x="20" y="298" width="560" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="LOI-FB-2kN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uX-22-cjb">
+                                <rect key="frame" x="20" y="381" width="560" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Zfh-jO-y31"/>
+                                </constraints>
+                                <string key="text">Chris Eidhof is a Dutch software developer living in Berlin. He spends most of his time building iOS and Mac apps, such as Deckset. He started UIKonf in 2013, http://objc.io, and wrote a book about Functional Programming in Swift.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-1R-oaN">
+                                <rect key="frame" x="20" y="540" width="560" height="40"/>
+                                <color key="backgroundColor" red="0.95957362810896163" green="0.13240654948521055" blue="0.16807225663146336" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BMB-qv-iDP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="DONE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="doneTapped:" destination="7H0-Xg-wgr" eventType="touchUpInside" id="BCM-Ei-jxh"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n0v-1R-oaN" secondAttribute="trailing" constant="20" id="81t-YS-dgl"/>
+                            <constraint firstAttribute="trailing" secondItem="Fas-TE-owy" secondAttribute="trailing" id="8he-0T-auV"/>
+                            <constraint firstItem="7uX-22-cjb" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="A1v-LJ-TBa"/>
+                            <constraint firstItem="7uX-22-cjb" firstAttribute="top" secondItem="eA5-Oi-mZZ" secondAttribute="bottom" constant="33" id="BjX-Yk-6zS"/>
+                            <constraint firstItem="Fas-TE-owy" firstAttribute="top" secondItem="ONJ-c2-4wf" secondAttribute="top" id="FXC-kj-KDc"/>
+                            <constraint firstItem="n0v-1R-oaN" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="Lzb-aM-SNk"/>
+                            <constraint firstItem="eA5-Oi-mZZ" firstAttribute="top" secondItem="Fas-TE-owy" secondAttribute="bottom" constant="23" id="dsB-hq-zxT"/>
+                            <constraint firstAttribute="trailing" secondItem="7uX-22-cjb" secondAttribute="trailing" constant="20" id="ftg-Wi-7CB"/>
+                            <constraint firstItem="eA5-Oi-mZZ" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="lSt-GS-7bL"/>
+                            <constraint firstAttribute="trailing" secondItem="eA5-Oi-mZZ" secondAttribute="trailing" constant="20" id="pUM-ry-KHg"/>
+                            <constraint firstItem="tlP-SL-Pib" firstAttribute="top" secondItem="n0v-1R-oaN" secondAttribute="bottom" constant="20" id="qY5-bS-CZd"/>
+                            <constraint firstItem="Fas-TE-owy" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" id="t6Z-dT-Jr8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="7uX-22-cjb" id="5yp-9y-nLv"/>
+                        <outlet property="titleLabel" destination="eA5-Oi-mZZ" id="xex-mQ-tiY"/>
+                        <outlet property="webView" destination="Fas-TE-owy" id="BoG-2P-YAa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cpY-rT-uRQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1254" y="461"/>
         </scene>
     </scenes>
 </document>
