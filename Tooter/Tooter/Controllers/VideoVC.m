@@ -46,6 +46,38 @@
 }
 
 
+- (IBAction)commentTapped:(id)sender {
+    // Test comment to validate communication to the server
+    NSDictionary *comment = @{@"username": @"testUser", @"comment": @"This video is excellent. Seen it twice now!"};
+    NSError *error;
+    
+    // Move this to the HTTPService Class
+    NSURLSession *session = [NSURLSession sharedSession];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8081/comments"];
+    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+    
+    [request addValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request addValue:@"application/json" forHTTPHeaderField:@"Accept"];
+    
+    [request setHTTPMethod:@"POST"];
+    
+    NSData *postData = [NSJSONSerialization dataWithJSONObject:comment options:0 error:&error];
+    
+    [request setHTTPBody:postData];
+    
+    NSURLSessionDataTask *postDataTask = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        if (data != nil) {
+            NSString* message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            NSLog(@"Server Reply: %@", message);
+        } else {
+            NSLog(@"No reply from server");
+        }
+    }];
+    
+    [postDataTask resume];
+}
+
+
 - (IBAction)doneTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

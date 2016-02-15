@@ -155,16 +155,48 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYK-qt-yUu">
+                                <rect key="frame" x="460" y="540" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Aus-dS-QXM"/>
+                                    <constraint firstAttribute="width" constant="250" id="Ezf-7v-KTi"/>
+                                    <constraint firstAttribute="width" constant="120" id="Lmj-Ef-i5v"/>
+                                    <constraint firstAttribute="height" constant="40" id="YA5-eI-JH1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
+                                <state key="normal" title="COMMENT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Aus-dS-QXM"/>
+                                        <exclude reference="Ezf-7v-KTi"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="commentTapped:" destination="7H0-Xg-wgr" eventType="touchUpInside" id="qoC-Sj-qNA"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0v-1R-oaN">
-                                <rect key="frame" x="20" y="540" width="560" height="40"/>
+                                <rect key="frame" x="20" y="540" width="120" height="40"/>
                                 <color key="backgroundColor" red="0.95957362810896163" green="0.13240654948521055" blue="0.16807225663146336" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="BMB-qv-iDP"/>
+                                    <constraint firstAttribute="height" constant="40" id="Ivf-Kf-9Hh"/>
+                                    <constraint firstAttribute="width" constant="300" id="SeG-xz-Ye3"/>
+                                    <constraint firstAttribute="width" constant="120" id="awN-ng-ygu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="15"/>
                                 <state key="normal" title="DONE">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="BMB-qv-iDP"/>
+                                        <exclude reference="SeG-xz-Ye3"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="doneTapped:" destination="7H0-Xg-wgr" eventType="touchUpInside" id="BCM-Ei-jxh"/>
                                 </connections>
@@ -174,17 +206,35 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="n0v-1R-oaN" secondAttribute="trailing" constant="20" id="81t-YS-dgl"/>
                             <constraint firstAttribute="trailing" secondItem="Fas-TE-owy" secondAttribute="trailing" id="8he-0T-auV"/>
+                            <constraint firstItem="tlP-SL-Pib" firstAttribute="top" secondItem="ZYK-qt-yUu" secondAttribute="bottom" constant="20" id="8ne-nS-UW2"/>
                             <constraint firstItem="7uX-22-cjb" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="A1v-LJ-TBa"/>
+                            <constraint firstItem="ZYK-qt-yUu" firstAttribute="leading" secondItem="n0v-1R-oaN" secondAttribute="trailing" constant="8" id="Atl-1l-8RU"/>
+                            <constraint firstItem="ZYK-qt-yUu" firstAttribute="leading" secondItem="n0v-1R-oaN" secondAttribute="trailing" constant="8" id="BGy-9n-xrK"/>
                             <constraint firstItem="7uX-22-cjb" firstAttribute="top" secondItem="eA5-Oi-mZZ" secondAttribute="bottom" constant="33" id="BjX-Yk-6zS"/>
                             <constraint firstItem="Fas-TE-owy" firstAttribute="top" secondItem="ONJ-c2-4wf" secondAttribute="top" id="FXC-kj-KDc"/>
                             <constraint firstItem="n0v-1R-oaN" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="Lzb-aM-SNk"/>
+                            <constraint firstItem="tlP-SL-Pib" firstAttribute="top" secondItem="n0v-1R-oaN" secondAttribute="bottom" constant="20" id="Tos-c1-IIm"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYK-qt-yUu" secondAttribute="trailing" constant="20" id="Ufd-O9-zpE"/>
                             <constraint firstItem="eA5-Oi-mZZ" firstAttribute="top" secondItem="Fas-TE-owy" secondAttribute="bottom" constant="23" id="dsB-hq-zxT"/>
                             <constraint firstAttribute="trailing" secondItem="7uX-22-cjb" secondAttribute="trailing" constant="20" id="ftg-Wi-7CB"/>
+                            <constraint firstAttribute="trailing" secondItem="ZYK-qt-yUu" secondAttribute="trailing" constant="20" id="jAa-YU-13W"/>
                             <constraint firstItem="eA5-Oi-mZZ" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="lSt-GS-7bL"/>
+                            <constraint firstItem="n0v-1R-oaN" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" constant="20" id="oRE-cv-zxt"/>
                             <constraint firstAttribute="trailing" secondItem="eA5-Oi-mZZ" secondAttribute="trailing" constant="20" id="pUM-ry-KHg"/>
                             <constraint firstItem="tlP-SL-Pib" firstAttribute="top" secondItem="n0v-1R-oaN" secondAttribute="bottom" constant="20" id="qY5-bS-CZd"/>
                             <constraint firstItem="Fas-TE-owy" firstAttribute="leading" secondItem="ONJ-c2-4wf" secondAttribute="leading" id="t6Z-dT-Jr8"/>
+                            <constraint firstItem="tlP-SL-Pib" firstAttribute="top" secondItem="ZYK-qt-yUu" secondAttribute="bottom" constant="20" id="u1c-U1-aap"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="81t-YS-dgl"/>
+                                <exclude reference="Lzb-aM-SNk"/>
+                                <exclude reference="qY5-bS-CZd"/>
+                                <exclude reference="Atl-1l-8RU"/>
+                                <exclude reference="BGy-9n-xrK"/>
+                                <exclude reference="Ufd-O9-zpE"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="7uX-22-cjb" id="5yp-9y-nLv"/>

@@ -46,11 +46,47 @@ var tutorials = [
   }
 ];
 
-// End Point
+// End Point: Tutorials
 app.get('/tutorials', function(req, res){
   console.log("Get from server");
   res.send(tutorials); // sends back JSON
 });
+
+var comments = [
+  {
+    username: "duliodenis",
+    comment: "Love this video. Learned so much!"
+  }
+];
+
+// End Point: Posting Comments
+app.post('/comments', function (req, res) {
+  var comment = req.body;
+
+  if (comment) {
+    if (comment.username && comment.comment) {
+      comments.push(comment);
+    } else {
+      res.send("You posted an invalid comment.");
+    }
+  } else {
+    res.send("Your post has no body.");
+  }
+  console.log(comments);
+  res.send("You successfully posted a comment.");
+});
+
+
+// End Point: Updating Comments
+// app.put('/comments', function(request, response) {
+//   var updateObject = request.body;
+//   var id = updateObject.uniqueId;
+//
+//   // connect to db, find record with id
+//   // then update existing record with updateObject
+//   response.send("Successfully updated.");
+// });
+
 
 // start the server
 app.listen(8081);
